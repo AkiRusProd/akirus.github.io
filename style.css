@@ -7,8 +7,7 @@
 .hero{
 	height: 100vh;
 	width: 100%;
-	/*background: #161929; */
-	/*background-image: ;  */
+	/* background: #161929; */
 	background-size: cover;
 	background-position: center;
 }
@@ -19,6 +18,8 @@
     width: 100%;
     height: 100%;
     background-color: #161929;
+	/* https://cssgradient.io/ */
+	background: linear-gradient(135deg, rgba(46,52,85,1) 0%, rgba(22,25,41,1) 69%, rgba(4,241,190,1) 69%, rgba(46,52,85,1) 100%);
     position: absolute;
     z-index: -1;
 }
@@ -40,6 +41,18 @@ nav{
 span{
 	color: #f9004d;
 }
+span:hover{
+	color: #04f1be;
+	transition: ease-out 0.3s;
+	cursor: pointer;
+}
+span:hover:before{
+	color: #f9004d;
+	transition: ease-out 0.3s;
+	cursor: pointer;
+}
+
+
 nav ul li{
 	list-style-type: none;
 	display: inline-block;
@@ -321,7 +334,8 @@ footer{
 	position: relative;
 	width: 100%;
 	height: 400px;
-	background: #101010;
+	/* background: #101010; */
+	background: linear-gradient(135deg, rgba(46,52,85,1) 0%, rgba(22,25,41,1) 21%, rgba(4,241,190,1) 21%, rgba(46,52,85,1) 100%);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -329,12 +343,12 @@ footer{
 }
 footer p:nth-child(1){
 	font-size: 30px;
-	color: white;
+	color: #242941;
 	margin-bottom: 20px;
 	font-weight: bold;
 }
 footer p:nth-child(2){
-	color: white;
+	color: #242941;
 	font-size: 17px;
 	width: 500px;
 	text-align: center;
@@ -362,7 +376,7 @@ footer p:nth-child(2){
 }
 .end{
 	position: absolute;
-	color:#f9004d;
+	color:#242941;
 	bottom: 35px;
 	font-size: 14px; 
 }
