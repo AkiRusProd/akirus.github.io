@@ -10,7 +10,7 @@ let mouse = {
 	x: null,
 	y: null,
 
-	radius: (canvas.height/100) * (canvas.width/100)
+	radius: (canvas.height/200) * (canvas.width/200)
 }
 
 window.addEventListener('mousemove',
@@ -53,19 +53,23 @@ class Particle {
 
 		if (distance < mouse.radius + this.size){
 			if (mouse.x < this.x && this.x < canvas.width - this.size * 10){
-				this.x += 10;
+				this.x += 5;
+				this.dirX = -this.dirX
 			}
 
 			if (mouse.x > this.x && this.x > this.size * 10){
-				this.x -= 10;
+				this.x -= 5;
+				this.dirX = -this.dirX
 			}
 
 			if (mouse.y < this.y && this.y < canvas.width - this.size * 10){
-				this.y += 10;
+				this.y += 5;
+				this.dirY = -this.dirY
 			}
 
 			if (mouse.y > this.y && this.y > this.size * 10){
-				this.y -= 10;
+				this.y -= 5;
+				this.dirY = -this.dirY
 			}
 	 
 		}

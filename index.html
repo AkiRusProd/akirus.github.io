@@ -33,9 +33,9 @@
 			<h2 class="logo"><span></span></h2>
 			<ul>
 				<li><a href="javascript:void(0);" data-link="about-scroll" class="scroll-to">About Me</a></li>
-				<li><a href="javascript:void(0);" class="scroll-to">Experiments</a></li>
+				<li><a href="javascript:void(0);" data-link="projects-scroll" class="scroll-to">Experiments</a></li>
 				<li><a href="javascript:void(0);" class="scroll-to">Skills</a></li>
-				<li><a href="javascript:void(0);" data-link="contact-me-scroll" class="scroll-to">Contact Me</a></li>
+				<li><a href="javascript:void(0);" data-link="social-scroll" class="scroll-to">Contact Me</a></li>
 			</ul>
 			<!-- <a href="#" class="btn">Subscribe</a> -->
 			
@@ -67,54 +67,55 @@
 			<div class="about-text" >
 				<h2>About Me</h2>
 				<h5>ML <span>Engineer</span></h5>
-				<p>Info</p>
-				<button type="button">Let's Talk</button>
+				<p>Computer Science Student at RTU MIREA. Machine Learning enthusiast</p>
+				<button type="button" data-link="social-scroll" class="scroll-to">Let's Talk</button>
 			</div>
 		</div>
 	</section>
 
 	<!-----service section start----------->
-	<div class="service">
-		<div class="title">
-			<h2>Services</h2>
+	<div class="service" >
+		<div class="title" id = "projects-scroll">
+			<h2>Projects</h2>
 		</div>
 
 		<div class="box">
 			<div class="card">
 				<i class="fas fa-bars"></i>
-				<h5>Some technologies</h5>
+				<h5>Numpy Neural Network</h5>
 				<div class="pra">
-					<p>Some text</p>
+					<p>Сustom numpy neural network model implementation in which you can add different layers by one line</p>
 
 					<p style="text-align: center;">
-						<!-- <a class="button" href="#">Read More</a> -->
-						<button type="button">Read More</button>
+						<a class="button" type="button" href="https://github.com/AkiRusProd/numpy-nn-model">Open Repo</a>
+						<!-- <button type="button">Read More</button> -->
 					</p>
 				</div>
 			</div>
 
 			<div class="card">
 				<i class="far fa-user"></i>
-				<h5>Some technologies</h5>
+				<h5>Numpy Transformer</h5>
 				<div class="pra">
-					<p>Some text</p>
+					<p>A fast numpy implementation of the Transformer (Seq2Seq) model in original paper "Attention is All You Need"</p>
 
 					<p style="text-align: center;">
-						<!-- <a class="button" href="#">Read More</a> -->
-						<button type="button">Read More</button>
+						<a class="button" href="https://github.com/AkiRusProd/numpy-transformer">Open Repo</a>
+						<!-- <button type="button">Read More</button> -->
 					</p>
 				</div>
+				
 			</div>
 
 			<div class="card">
 				<i class="far fa-bell"></i>
-				<h5>Some technologies</h5>
+				<h5>Under development</h5>
 				<div class="pra">
-					<p>Some text</p>
+					<p>...</p>
 
 					<p style="text-align: center;">
-						<!-- <a class="button" href="#">Read More</a> -->
-						<button type="button">Read More</button>
+						<a class="button" href="#">...</a>
+						<!-- <button type="button">Read More</button> -->
 					</p>
 				</div>
 			</div>
@@ -122,19 +123,19 @@
 	</div>
 
 	<!------Contact Me------>
-	<div class="contact-me" id = "contact-me-scroll">
-		<p>Let Me contact with you.</p>
+	<!-- <div class="contact-me" id = "contact-me-scroll"> -->
+		<!-- <p>Let Me contact with you.</p> -->
 		<!-- <a class="button-two" href="#">Hire Me</a> -->
-		<button type="button">Hire Me</button>
-	</div>
+		<!-- <button type="button" href="#">Hire Me</button> -->
+	<!-- </div> -->
 
 	<!------footer start--------->
 	<footer>
 		<p>Akimov Rustam</p>
 		<p>Links:</p>
-		<div class="social">
+		<div class="social" id = "social-scroll">
 			<a href="https://t.me/akimovR"><img alt="telegram" src="img/tg_logo.png" width="50" height="50"><i class="telegram-link"></i></a>
-			<a href="https://github.com/AkiRusProd"><img alt="github" src="img/gh_logo.png" width="50" height="50"><i class="github-link"></i></a>
+			<a href="https://github.com/AkiRusProd"><img alt="github" src="img/gh_logo_black.png" width="50" height="50"><i class="github-link"></i></a>
 			<a href="https://vk.com/levacc"><img alt="vk" src="img/vk_logo.png" width="50" height="50"><i class="vk-link"></i></a>
 		</div>
 		<p class="end">@ 2022 Akimov Rustam</p>
