@@ -299,6 +299,9 @@ button:hover{
 	position: relative;
 	overflow: hidden;
 	text-align: center;
+	transition: background 0.5s ease;
+	transform: scale(1);
+	transition: .5s;
 
 	
 }
@@ -313,6 +316,7 @@ button:hover{
 .card:hover{
 	transform: scale(1.07);
 	transition: .5s;
+	background: linear-gradient(135deg, rgba(46,52,85,1) 0%, rgba(22,25,41,1) 69%);
 
 }
 
@@ -338,7 +342,7 @@ h5{
 	text-decoration: none;
 	border: 2px solid transparent;
 	/* font-weight: bold; */
-	padding: 13px 20px;
+	padding: 15px 20px;
 	border-radius: 7px;
 	/* transition: .4s;  */
 
@@ -438,6 +442,8 @@ footer p:nth-child(2){
 	color: white;
 	text-decoration: none;
 	font-size: 20px;
+	transform: scale(1);
+	transition: .3s;
 }
 .social a:hover{
 	transform: scale(1.3);
