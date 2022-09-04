@@ -82,7 +82,42 @@ nav ul li a:hover{
 	transform: scale(1.2);
 } */
 
-
+/* Mouse scroll animation*/
+.scroll-downs {
+  position: absolute;
+  top: 90%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
 
 
 
@@ -220,7 +255,9 @@ button {
 	background-color:#f9004d;
 	box-shadow: inset 0 0 0 0 #04f1be ;
 	transition: ease-out 0.3s;
-	outline: none;}
+	outline: none;
+	border-radius: 7px;
+}
   
 button:hover{
 	background-color:#04f1be;
@@ -235,7 +272,7 @@ button:hover{
 
 
 .service{
-	background: #101010;
+	background: #121212;
 	width: 100%;
 	padding: 100px 0px;
 }
@@ -257,7 +294,7 @@ button:hover{
 	width: 335px;
 	padding: 20px 35px;
 	background: #191919;
-	border-radius: 20px;
+	border-radius: 7px;
 	margin: 15px;
 	position: relative;
 	overflow: hidden;
@@ -297,7 +334,7 @@ h5{
 	border: 2px solid transparent;
 	/* font-weight: bold; */
 	padding: 13px 20px;
-	/* border-radius: 30px; */
+	border-radius: 7px;
 	/* transition: .4s;  */
 
 	width: 140px;
