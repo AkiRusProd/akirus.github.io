@@ -107,7 +107,7 @@ nav ul li a:hover{
   width: 3px;
   height: 10px;
   border-radius: 25%;
-  background-color: #fff;
+  background-color: #04f1be;
   animation-name: scroll;
   animation-duration: 2.2s;
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);
