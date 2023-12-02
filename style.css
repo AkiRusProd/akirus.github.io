@@ -178,11 +178,12 @@ h4{
 	
 }
 .about img{
-	height: auto;
-	width: 430px;
+	width: 40vw;
+	max-width: 430px;
 }
 .about-text{
-	width: 550px;
+	width: 40vw;
+	max-width: 550px;
 }
 .main{
 	width: 1130px;
@@ -194,24 +195,25 @@ h4{
 }
 .about-text h2{
 	color: white;
-	font-size: 75px;
+	/* font-size: 75px; */
+	font-size: 4vw;
 	text-transform: capitalize;
 	margin-bottom: 20px;
 }
 .about-text h5{
 	color: white;
 	letter-spacing: 2px;
-	font-size: 22px;
+	/* font-size: 22px; */
+	font-size: 2vw;
 	margin-bottom: 25px;
 	text-transform: capitalize;
-
-	
 }
 .about-text p{
 	color: #fcfc;
-	letter-spacing: 1px;
-	line-height: 28px;
-	font-size: 18px;
+	letter-spacing: 2px;
+	/* line-height: 28px; */
+	/* font-size: 18px; */
+	font-size: 1.7vw;
 	margin-bottom: 45px;
 
 	font-family: LibreBaskerville-Regular, sans-serif;
@@ -282,9 +284,11 @@ button:hover{
 }
 .box{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	min-height: 400px;
+	/* padding: 0 335px; */
 	/* flex-direction: column */
 }
 .card{
